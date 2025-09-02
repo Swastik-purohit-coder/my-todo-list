@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen">
+
+  <nav class="bg-blue-600 text-white p-4 flex justify-between">
+  <h1 class="text-xl font-bold">Task manager</h1>
+  <button id="darkToggle">🌙</button>
+  </nav>
+  <div class="p-4 flex gap-2">
+    <input id="taskinput" type="text" placeholder="Enter text... " class="border p-2 flex-1 rounded" >
+    <select id="catagory" class="border p-2 rounded">
+      <option value=""disabled selected>select catagory</option>
+      <option value="">work</option>
+      <option value="">study</option>
+      <option value="">personal</option>
+      <option value="">other</option>
+
+    </select>
+    <button id="addTask" class="bg-blue-600 text-white px-4 py-2 rounded">Add</button>
+
+  
+
+  </div>
+    <ul id="tasklister" class="p-4 space-y-2"></ul>
+    <div class="p-4">
+      <button class="filter-btn" data-filter="all">all</button>
+      <button class="filter-btn" data-filter="work">work</button>
+      <button class="filter-btn" data-filter="study">study</button>
+      <button class="filter-btn" data-filter="personal">personal</button>
+      <button class="filter-btn" data-filter="other">other</button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
